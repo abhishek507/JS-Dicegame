@@ -7,6 +7,9 @@ function roll(){
 
    setTimeout(()=>{
     let diceNumber = Math.floor(Math.random()*6);
+    if(diceNumber == 0){
+        diceNumber = 1;
+    }
     let diceValue = document.getElementById('diceValue');
     diceValue.innerHTML = diceNumber;
    },2000) 
